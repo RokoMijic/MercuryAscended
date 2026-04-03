@@ -627,7 +627,7 @@ Combined with ~150 kJ/kg from surface mining, handling, and equipment heat leaks
 
 There is no thermodynamic lower bound on electromagnetic mass driver losses. The US Navy's EMALS achieves 90% efficiency with crude copper coils in atmosphere. A superconducting linear synchronous motor in vacuum on Mercury eliminates resistive and aerodynamic losses; the remaining loss mechanisms (switching, AC superconductor losses, structural eddy currents) are engineering problems with known solutions. Each additional 0.1% of efficiency is worth months off the project timeline, providing enormous incentive for optimisation.
 
-####7.1.1 Gross launch power versus net consumed energy
+#### 7.1.1 Gross launch power versus net consumed energy
 
 A useful clarification is required here. The launch architecture handles very large gross kinetic power, but that is not the same thing as the net external energy consumption of the surface-to-shell transport step.
 
@@ -718,8 +718,8 @@ Mercury plus Venus provides all necessary materials. No interplanetary power bea
 
 Mercury Down can execute with zero imports by substituting basalt fibre for CFRP, liquid lithium for ammonia at all temperature ranges, magnetic bearings for lubricated ones, and all-ceramic/metal construction with no polymers. This costs roughly 20–30% overall efficiency.
 
-#9. The Sunward Power Umbrella
-##9.1 The minimum external power requirement
+# 9. The Sunward Power Umbrella
+## 9.1 The minimum external power requirement
 
 The irreducible external energy cost of disassembling Mercury is its gravitational binding energy. Approximating Mercury as a uniform sphere,
 
@@ -736,17 +736,17 @@ P_min = E_bind / (1 yr) ~= 5.67 x 10^22 W
 This is a hard lower bound. It excludes mining, refining, refrigeration, orbital processing, control power, transmission losses, and deployment overhead. A practical campaign target is therefore not merely 5.7 x 10^22 W but of order 10^23 W of useful delivered power. Mercury’s mean distance from the Sun is about 58 million km, its orbital period is 87.97 Earth days, and its orbital inclination is about 7°, which set the basic geometry for any Mercury-local collector. (science.nasa.gov
 )
 
-##9.2 Why the collector cannot be a pure electric powersat swarm
+## 9.2 Why the collector cannot be a pure electric powersat swarm
 
 At Mercury’s mean distance, the solar flux is about 9.08 kW/m^2. If the entire collector operated as a conventional all-electric powersat sheet, gross delivered electrical power per square meter would be far below the incident solar flux, and the required collector area would become too large for a Mercury-local architecture. The umbrella therefore cannot be a giant solar panel. It must be a hybrid optical-power structure in which most intercepted sunlight remains as reflected or thermal/process power, while only the fraction required for electrically hard loads is converted to electricity and beamed to Mercury. Even at an aggressive average useful output of 5 kW/m^2, the gravitational minimum alone still requires about 1.13 x 10^19 m^2 of collector area, and a full 10^23 W campaign target requires about 2.0 x 10^19 m^2. (science.nasa.gov
 )
 
-##9.3 Where the umbrella can go
+## 9.3 Where the umbrella can go
 
 The main collector must sit sunward of Mercury-Sun L1, not anti-sunward. The anti-sunward side is geometrically and dynamically inferior: Mercury can shadow it, and solar radiation pressure pushes it farther away from Mercury rather than helping to hold it near the planet. By contrast, on the sunward side, solar radiation pressure has the correct sign to support a non-Keplerian, Mercury-co-moving collector. The main umbrella should therefore occupy a broad region sunward of L1, with only smaller relays, buffers, or radiators placed elsewhere. (science.nasa.gov
 )
 
-##9.4 The controlling variable: effective areal density
+## 9.4 The controlling variable: effective areal density
 
 The relevant design parameter is not the mass per square metre of the active electronics. It is the mass per square metre of the entire sunlight-intercepting module,
 
@@ -763,7 +763,7 @@ a_SRP,max ~= 6.06 x 10^-4 m/s^2
 This is substantial, but not enough to support an arbitrarily large local collector unless most of the structure remains extremely light. The umbrella therefore cannot be built as a dense swarm of ordinary fully active satellites. It must be dominated by very low-mass reflective membrane. (science.nasa.gov
 )
 
-##9.5 Local dynamics and the preferred shape of the umbrella
+## 9.5 Local dynamics and the preferred shape of the umbrella
 
 At the natural sunward equilibrium for a very light reflector, small displacements are anisotropic. In the circular-orbit point-mass approximation, the polar restoring coefficient k_z^2 (for displacement above or below Mercury’s orbital plane) is larger than the azimuthal restoring coefficient k_y^2 (for prograde/retrograde displacement away from Mercury’s radial line). For the representative sigma_eff = 0.10 kg/m^2 pure-reflector case used in this analysis, the local linearized coefficients are approximately
 
@@ -777,11 +777,11 @@ k_y^2 / k_z^2 ~= 0.385
 
 Azimuthal restoring is therefore only about 39% as strong as polar restoring for the same displacement. Equivalently, for the same available support acceleration, the umbrella can extend about 2.6x farther in the azimuthal direction than in the polar direction. This has a direct engineering consequence: the main collector should not be square. It should be somewhat longer than it is tall, with a natural aspect ratio of order 2:1 to 3:1, because the local restoring field is weaker azimuthally than polarly.
 
-##9.6 What part of parameter space is actually viable
+## 9.6 What part of parameter space is actually viable
 
 The local umbrella only works if most of its area lives in the regime of tens of grams per square metre, not tenths-to-unity kg/m^2. Around sigma_eff ~ 0.1 kg/m^2, a passively supported local collector begins to run out of geometric room before it reaches the required 10^19 m^2 scale. The viable regime is therefore pushed downward, toward a few x 10^-2 kg/m^2 gross areal density for the dominant reflective area. Heavier active substructures are still allowed, but only if they occupy a minority of the total area. In other words: the umbrella can be physically credible only if it is mostly a sail-like optical megastructure with sparse heavy hardware, not a monolithic sheet of conventional powersats.
 
-##9.7 Architecture: crossed-beam reflector bands feeding smaller active ribbons
+## 9.7 Architecture: crossed-beam reflector bands feeding smaller active ribbons
 
 The correct architecture is therefore a cross-fed optical umbrella.
 
@@ -792,7 +792,7 @@ The inner ribbons are the active substructures. They carry the electrically hard
 This division is the key systems insight. The umbrella closes only if most of the square kilometres are passive, reflective, and extremely light, while the dense hardware is concentrated into a much smaller active backbone. (science.nasa.gov
 )
 
-9.7.1 The umbrella takes power, not mass
+### 9.7.1 The umbrella takes power, not mass
 
 The umbrella should not be imagined as the destination for most of Mercury's mass. Quite the opposite: the umbrella is valuable precisely because it must remain extremely light per unit area.
 
@@ -806,22 +806,22 @@ Only a comparatively small fraction of total mass goes into the umbrella itself.
 
 This changes the systems picture in an important way. Mercury is not primarily being converted into a gigantic dense collector. It is primarily being converted into a large, roughly symmetric Mercury-centered logistics shell, while the umbrella remains a comparatively tiny mass fraction that intercepts large power with very little material.
 
-##9.8 Fill factor and why this is not a loose swarm
+## 9.8 Fill factor and why this is not a loose swarm
 
 Because the design operates close to a hard power boundary, projected optical fill factor matters. A 30–50% dead-area fraction is fatal. Something like 80–90% projected optical coverage is survivable; much worse than that is not. The umbrella therefore should not be imagined as a loose cloud of widely separated little spacecraft. It is closer to a modular sail carpet: very large membrane tiles, sparse heavy buses, only modest gaps, and registration optimized for optical coverage rather than literal contact. The design target is high projected collecting area, not a visually “dense” swarm in the ordinary satellite sense.
 
-##9.9 Spectral splitting, active ribbons, and hot radiators
+## 9.9 Spectral splitting, active ribbons, and hot radiators
 
 The active ribbons should not absorb the full spectrum. They should use a spectral-splitting power-kite design: most incident light remains in the reflective branch for thrust and process heat, while only the fraction required for electric loads is diverted into concentrated active receivers and microwave emitters. The radiators do not need to be coplanar with the reflectors. That assumption is too restrictive. A realistic active ribbon separates reflective collection area, conversion area, radiator area, and emitting area, and allows each to be oriented independently.
 
 Radiator temperature should be set by mass efficiency, not by the mistaken requirement that the whole module share one temperature. Radiator area scales as 1/T^4, so small, hot radiator patches are favored over large cool ones. Around 800 K, radiators are still essentially invisible to the eye; around 1000–1500 K they become progressively more mass-efficient and can acquire a faint to obvious red/orange visible glow. A plausible active ribbon therefore consists of a large cool reflective area plus much smaller, hotter active and radiative patches. (science.nasa.gov
 )
 
-##9.10 Ion trim
+## 9.10 Ion trim
 
 The passive optical umbrella should carry most of the geometry, but the heavier active ribbons will still need trim thrust. High-exhaust ion engines, around 80 km/s, are a plausible short-campaign support system: they are power-cheap and propellant-expensive. For a campaign lasting less than a year, that trade is acceptable. Ion propulsion should therefore be treated as a temporary geometric support layer for the heavy active substructures, not as the primary means of holding up the umbrella. The main collector still wants to be supported predominantly by photon pressure.
 
-9.11 Visibility and side effects at Earth
+## 9.11 Visibility and side effects at Earth
 
 A 2-million-kilometre-scale umbrella at Mercury’s orbit sounds as if it ought to eclipse Earth constantly. It does not. Mercury’s orbital plane is inclined by about 7° to the ecliptic, and ordinary Mercury transits are correspondingly rare: NASA’s seven-century catalog lists 94 Mercury transits from 1601 to 2300, or about 13.4 per century. A giant broad-face umbrella widens the alignment window, but it does not remove the transit-season constraint. A simple broad-face estimate gives roughly 45 overlap events per century of any kind, and only about 18 full-total events per century for an effectively opaque 2-million-km umbrella. That is spectacular, but it is not a monthly nuisance; it is more like one overlap every 2–3 years on average, with central totality on the order of once every 5–6 years in the simplest geometry. (eclipse.gsfc.nasa.gov
 )
@@ -829,7 +829,7 @@ A 2-million-kilometre-scale umbrella at Mercury’s orbit sounds as if it ought 
 The long-run climate effect is modest because the duty cycle is tiny. Earth’s globally averaged incoming solar flux is about 340 W/m^2. Even treating the eclipses pessimistically, the century-averaged forcing works out to only a few hundredths to a few tenths of a watt per square metre, depending on how generously partial events are counted. So the umbrella could produce rare, civilization-scale sky events without imposing a large long-term perturbation on Earth’s mean energy budget. (earth.gsfc.nasa.gov
 )
 
-###9.10.1 Power return is to the disassembly shell, not Mercury's surface
+### 9.10.1 Power return is to the disassembly shell, not Mercury's surface
 
 The power-return path should terminate primarily at the Planetary Disassembly Shell, not at Mercury's surface.
 
@@ -839,7 +839,7 @@ The shell should therefore host broad refractory receiver zones, power-condition
 
 This is also consistent with the general migration of industrial metabolism away from the surface. As the campaign matures, the surface becomes mainly a mining-and-launch substrate, while the shell increasingly becomes the dominant location for capture, buffering, power reception, routing, and thermal rejection.
 
-###9.10.2 Shell radius grows with campaign power
+### 9.10.2 Shell radius grows with campaign power
 
 Once the shell is recognized as the main receiving structure, its radius becomes an explicit power-management variable.
 
@@ -853,7 +853,7 @@ The conclusion is straightforward: as campaign power rises, shell radius must al
 
 This is why a mature high-power campaign should be thought of as preferring shell radii more like 20-50 R_Mercury than 10 R_Mercury, especially late in the disassembly when returned power is greatest.
 
-##9.12 Representative design
+## 9.12 Representative design
 
 A representative physically credible umbrella therefore has the following form.
 
@@ -861,11 +861,11 @@ The primary collecting area is a sunward optical megastructure of total area of 
 
 The power-return path is then aimed not at Mercury's surface but at the evolving disassembly shell. As shell radius grows from the lower tens to the upper tens of Mercury radii, receiver loading becomes more manageable and the shell increasingly takes over the roles of power reception, buffering, routing, and heat rejection. That is the version of the umbrella that is consistent with the revised endgame architecture: most mass goes into the shell and symmetric stores; the umbrella remains very light; and power is received by the shell rather than by the planet.
 
-##9.13 Summary
+## 9.13 Summary
 
 The power problem is not solved by a simple quasi-statite disc of ordinary powersats. A 12-month Mercury disassembly requires a useful power flow of order 10^23 W, with 5.67 x 10^22 W as the gravitational floor. That in turn requires a collector of order 10^19 m^2, placed sunward of Mercury, with most of its area remaining in an ultralight reflective regime. The local restoring field is anisotropic: polar restoring is stronger than azimuthal restoring, so the umbrella should be somewhat longer than it is tall. The physically credible design is therefore a sunward, high-fill-factor, crossed-beam optical megastructure with passive reflector bands feeding smaller active receiver/beamer ribbons, supported primarily by photon pressure and trimmed by ion propulsion. Rare Earth eclipses are a real consequence, but Mercury’s 7° orbital inclination confines them to transit seasons and keeps them far less frequent than naïve geometric intuition suggests. In the mature campaign, the umbrella is a power structure, not a mass sink: most of Mercury's mass is routed into the expanding shell and into roughly symmetric shell-side storage.
 
-##9.14 An intuition pump: the umbrella, the beach ball, and the pea
+## 9.14 An intuition pump: the umbrella, the beach ball, and the pea
 
 It is easy to lose intuition at these scales, so a physical scale model is useful. Let the scale be 1 mm = 1000 km. Mercury then becomes an iron pea about 5 mm across, the Sun becomes a bright ball about 1.4 m across, and the Sun sits about 58 m away. On that same scale, the required collector is a roughly 2 m x 2 m umbrella held only a few tens of centimetres sunward of the pea.
 
